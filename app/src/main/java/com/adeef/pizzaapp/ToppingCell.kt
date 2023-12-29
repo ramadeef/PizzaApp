@@ -1,5 +1,6 @@
 package com.adeef.pizzaapp
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -23,6 +24,7 @@ fun ToppingCell(
     modifier: Modifier = Modifier,
     onClickTopping: () -> Unit
 ) {
+    Log.d("ToppingCell", "Called ToppingCell for $topping")
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
@@ -32,7 +34,7 @@ fun ToppingCell(
     ) {
         Checkbox(
             checked = (placement != null),
-            onCheckedChange = { /* TODO */ }
+            onCheckedChange = { onClickTopping() }
         )
         Column(
             modifier = modifier.weight(1f, fill = true)
