@@ -1,6 +1,6 @@
-package com.adeef.pizzaapp
+package com.adeef.pizzaapp.model
 import android.os.Parcelable
-import com.adeef.pizzaapp.ToppingPlacement.*
+import com.adeef.pizzaapp.model.ToppingPlacement.*
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

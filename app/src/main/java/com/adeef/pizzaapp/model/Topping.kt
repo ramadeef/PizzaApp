@@ -1,6 +1,7 @@
-package com.adeef.pizzaapp
+package com.adeef.pizzaapp.model
 
 import androidx.annotation.StringRes
+import com.adeef.pizzaapp.R
 
 enum class Topping(
     @StringRes val toppingName: Int
